@@ -1,0 +1,20 @@
+<input [(ngModel)]="id">
+<input readonly [(ngModel)]="id">
+<p>Mon id est : {{id}}</p>
+
+<br>
+
+<br>
+
+Filtre : <input [(ngModel)]="pokeFilterName">
+<select [(ngModel)]="pokeSelectorId">
+    <option *ngFor="let pokemon of pokeList | filterPokemonPipe:'name':pokeFilterName" [value]="pokemon.id">{{pokemon.name}}</option>
+</select>
+<button (click)="buttonGo()" >GO !</button>
+
+<br>
+
+<br>
+
+<p>L'id de mon pokémon est : {{pokeSelectorId}}</p>
+<app-pokemon-details *ngIf="pokeDetails" [details]="pokeDetails"></app-pokemon-details>

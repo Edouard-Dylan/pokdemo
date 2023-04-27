@@ -1,0 +1,77 @@
+.wrapper {
+  display: flex;
+  height: 420px;
+  width: 654px;
+  padding: 2em;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  align-self: center;
+  float: left;
+  height: 100%;
+  width: 327px;
+  margin: 2em;
+}
+
+.product-img img {
+    max-height: 100%;
+    min-width: 100%;
+    width: auto;
+    width: auto;
+  border-radius: 7px 0 0 7px;
+  background-image: url('../../assets/pokeball.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.product-info {
+  align-self: center;
+  float: left;
+  height: 420px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-info h1 {
+  padding-top: 10px;
+  font-size: 40px;
+  color: #474747;
+  font-family: 'Bentham', serif;
+  width: 100%;
+}
+
+.product-text h2 {
+  font-size: 25px;
+  color: #474747;
+  font-family: 'Bentham', serif;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  line-height: 1.7em;
+  font-size: 15px;
+}
+
+.product-text ul{
+    list-style: none;
+    list-style-position: outside;
+}
+
+.stats, .types{
+
+}

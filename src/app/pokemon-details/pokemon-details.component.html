@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="product-img">
+      <img [src]="details.sprites.front_default"/>
+  </div>
+  <div class="product-info">
+    <h1>{{details.name}}</h1>
+    <div class="product-text">
+      <div class="types">
+        <h2>Types:</h2>
+        <ul>
+            <li *ngFor="let type of details.types" [value]="type.type.name">{{type.type.name}}</li>
+        </ul>
+      </div>  
+      <div class="stats">
+        <h2>Stats:</h2>
+        <ul>
+            <li *ngFor="let stat of details.stats" [value]="stat.stat.name">{{stat.stat.name}} : {{stat.base_stat}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
